@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pig_farm/constants.dart';
+import 'package:pig_farm/screens/home/components/featured_plants.dart';
 import 'package:pig_farm/screens/home/components/header_with_search_box.dart';
 import 'package:pig_farm/screens/home/components/recomends_plants.dart';
 import 'package:pig_farm/screens/home/components/title_with_more_button.dart';
@@ -29,7 +30,12 @@ class Body extends StatelessWidget {
             title: "Recomended",
             press: () {},
           ),
-          RecomendsPlants()
+          const RecomendsPlants(),
+          TitleWithMoreButton(title: "Featured Plants", press: () {}),
+          const FeaturedPlants(),
+          const SizedBox(
+            height: kDefaultPadding,
+          )
         ],
       ),
     );
